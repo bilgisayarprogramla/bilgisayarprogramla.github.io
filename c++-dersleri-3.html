@@ -1,0 +1,254 @@
+    <!DOCTYPE html>
+    <html lang="tr">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+    <!--script src="https://wtools.io/code/embed-js/dYq"></script>!-->
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 fixed-top">
+            <a href="index.html">
+                <img src="img/programmer.svg" class="mr-2" height="40">
+            </a>
+            <a class="navbar-brand" href="index.html" style="margin-bottom: 3px; margin-top: 4px;"><span style="color: #c6fc1b; font-size: 20px">Anasayfa</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="c++-dersleri-1.html">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python-dersleri-1.html">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bash-dersleri-1.html">Bash</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="tepe" style="width: 100%; height: 100px;">
+
+    </div>
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-9 col-lg-9 blog-main">
+                <div class="blog-post">
+                    <h3 class="blog-post-title">C++ Temel Kavramlar - II</h3>
+                    <p class="blog-post-meta">3 Nisan 2019 -
+                        <a href="#">Yavuz Emilli</a>
+                    </p>
+
+                    <hr>
+                    <h4>Yorum Satırları</h4>
+                    <p id="icerik">Yorum Satırları, C ++ koduna ekleyebileceğiniz açıklayıcı ifadelerdir. Kaynak kodu okuyanlar için açıklayıcı ifadeleri barındırır. Bütün programlama dillerinde buna benzer yorum satıları mevcuttur.<br><br>C ++, tek satırlı ve çok satırlı yorumları yazılabilir. C++’ın derleyicisi tarafından yorum satırları bir açıklama olarak görür ve dikkate almaz.<br><br>
+                        Tek ve çok satırlı yorumlar aşağıdaki gibi yapılır.
+                    </p>
+                    <iframe src="https://wtools.io/code/embed-iframe/edg" style="border:none;width:100%"></iframe>
+                    <iframe src="https://wtools.io/code/embed-iframe/edk" style="border:none;width:100%;"></iframe>
+
+                    <br><br>
+                    <h4>Veri Tipleri</h4>
+                    <p>Program yazarken, çeşitli bilgileri saklamak için bir dizi değişkenler kullanırız. Değişkenler, değerleri bellekte saklamak için ayrılmış bellek bölümleridir. Bu nedenle, bir değişken oluşturduğunuzda hafızada yer ayırmış oluruz.<br><br>Karakterler, metinler, tamsayı, ondalıklı sayılar, boolean(true/false) gibi çeşitli veri türlerine ait bilgilerini saklamak isteyebilirsiniz. Değişkenin veri türüne bağlı olarak, işletim sistemi hafızayı ilgili boyutta ayırır.</p>
+
+                    <ul class="list">
+                        <li>signed</li>
+                        <li>unsigned</li>
+                        <li>short</li>
+                        <li>long</li>
+                    </ul>
+
+                    <table class="table table-bordered" style="height: 519px;" width="683">
+                        <tbody>
+                            <tr>
+                                <th>Tip</th>
+                                <th>Bellek Boyutu</th>
+                                <th>Değer Aralığı</th>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>1 byte</td>
+                                <td>-127 – 127 yada 0 – 255</td>
+                            </tr>
+                            <tr>
+                                <td>unsigned char</td>
+                                <td>1 byte</td>
+                                <td>0 – 255</td>
+                            </tr>
+                            <tr>
+                                <td>signed char</td>
+                                <td>1 byte</td>
+                                <td>-127 – 127</td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>4 byte</td>
+                                <td>-2147483648 – 2147483647</td>
+                            </tr>
+                            <tr>
+                                <td>unsigned int</td>
+                                <td>4 byte</td>
+                                <td>0 – 4294967295</td>
+                            </tr>
+                            <tr>
+                                <td>signed int</td>
+                                <td>4 byte</td>
+                                <td>-2147483648 – 2147483647</td>
+                            </tr>
+                            <tr>
+                                <td>short int</td>
+                                <td>2 byte</td>
+                                <td>-32768 – 32767</td>
+                            </tr>
+                            <tr>
+                                <td>unsigned short int</td>
+                                <td>Range</td>
+                                <td>0 – 65,535</td>
+                            </tr>
+                            <tr>
+                                <td>signed short int</td>
+                                <td>Range</td>
+                                <td>-32768 – 32767</td>
+                            </tr>
+                            <tr>
+                                <td>long int</td>
+                                <td>4 byte</td>
+                                <td>-2,147,483,648 – 2,147,483,647</td>
+                            </tr>
+                            <tr>
+                                <td>signed long int</td>
+                                <td>4 byte</td>
+                                <td>long int gibi</td>
+                            </tr>
+                            <tr>
+                                <td>unsigned long int</td>
+                                <td>4 byte</td>
+                                <td>0 – 4,294,967,295</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>4 byte</td>
+                                <td>+/- 3.4e +/- 38 (~7 digits)</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>8 byte</td>
+                                <td>+/- 1.7e +/- 308 (~15 digits)</td>
+                            </tr>
+                            <tr>
+                                <td>long double</td>
+                                <td>8 byte</td>
+                                <td>+/- 1.7e +/- 308 (~15 digits)</td>
+                            </tr>
+                            <tr>
+                                <td>wchar_t</td>
+                                <td>2 yada 4 byte</td>
+                                <td>1 geniş karakter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Aşağıdaki örnekte sizeof metodu ile veri tiplerinin bellekte ne kadar alan kapladığını görebilirsiniz. Mevcut örnekte yeni bir satıra geçmek için endl ve birden fazla veri eklemek için de &lt;&lt; sembolü kullanılmıştır.</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/ed1" style="border:none;width:100%"></iframe>
+
+                    <br><br>
+                    <h3>C++ typedef Kullanımı</h3>
+                    <p><strong>typedef</strong> kullanarak mevcut bir tip için yeni bir isim oluşturabilirsiniz. Aşağıda yeni bir tür tanımlamak için basit söz dizimi bulunmaktadır.</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/ed2" style="border:none;width:100%; height: 60px"></iframe>
+                    <p><strong>Örnek:</strong> int veri türünü yas olarak adlandırma</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/ed4" style="border:none;width:100%; height: 80px;"></iframe>
+
+                    <h3>C++ Enum Kullanımı</h3>
+                    <p>Enum bir tür, isteğe bağlı bir tür adı ve türün değerleri olarak kullanılabilecek bir sıfır veya daha fazla tanımlayıcı kümesidir. Her bir sayıcı, türü numaralandırma olan bir sabittir. Her bir enum değeri bir sayı değerine karşılık gelir.<br><br>
+                        Bir enumerate oluşturmak için enum anahtar sözcüğünün kullanımını gerektirir. Söz dizimi aşağıdaki gibidir.</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/edT" style="border:none;width:100%" height="70px"></iframe>
+                    <p><strong>Örnek: </strong>Her bir gün değeri bir sayı değerine karşılık gelmektedir.0 pazartesi olmak üzere 4 değeri cumaya gelir. ikinci satırdada gun değeri carsamba olarak enum’a aktarılmıştır. İstege bağlı olarak da enuma istenilen değer verilebilir (cumartesi=8 gibi).</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/edU" style="border:none;width:100%" height="70px"></iframe>
+                </div>
+                <!-- /.blog-post-3 -->
+
+
+
+                <div class="btn-toolbar justify-content-between">
+                    <div class="btn-group">
+                        <a class="btn btn-outline-primary" href="c++-dersleri-2.html">Geri</a>
+                        <a class="btn btn-outline-secondary disabled" href="#">İleri</a>
+                    </div>
+                    <a class="btn btn-outline-primary" href="#tepe" style="margin-left: auto">Başa Dön</a>
+                </div>
+                <br>
+            </div>
+            <!-- /.blog-main -->
+
+
+
+
+            <aside class="col-sm-4 col-md-3 col-lg-3">
+                <div class="kenar" style="text-align:center; position: sticky;">
+                    <div id="gizle1" class="sidebar-module sidebar-module-inset">
+                        <h4>Hakkımda</h4>
+                        <p>Adım Yavuz. Bilgisayar Mühendisliği öğrencisiyim ve 3 senedir yazılım geliştiriciliği ile ilgileniyorum.</p>
+                    </div>
+                    <div class="sidebar-module ">
+                        <h4>Yazılar</h4>
+                        <ol class="list-unstyled">
+                            <li>
+                                <a href="c++-dersleri-1.html">C++ Programlamaya Giriş</a>
+                            </li>
+                            <li>
+                                <a href="c++-dersleri-2.html">C++ Temel Kavramlar - I</a>
+                            </li>
+                            <li>
+                                <a href="c++-dersleri-3.html">C++ Temel Kavramlar - II</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </aside>
+            <!-- /.blog-sidebar -->
+        </div>
+        <!-- /.row -->
+    </main>
+    <!-- /.container -->
+
+    <footer class="main-footer py-4">
+        <p class="text-muted text-center small p-0 mb-4">&copy; Copyright 2019 — Bilgisayar Programlama</p>
+        <div class="social d-table mx-auto">
+            <a class="facebook mx-3 h4 d-inline-block text-secondary" href="https://www.facebook.com/yavuzemilli" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.instagram.com/yavuzemilli/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            <a class="github mx-3 h4 d-inline-block text-secondary" href="https://github.com/manuelportakal" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+</body></html>
