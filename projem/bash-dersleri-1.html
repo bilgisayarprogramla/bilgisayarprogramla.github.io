@@ -1,0 +1,149 @@
+    <!DOCTYPE html>
+    <html lang="tr">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bash Dersleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+    <!--script src="https://wtools.io/code/embed-js/dYq"></script>!-->
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 fixed-top">
+            <a href="index.html">
+                <img src="img/programmer.svg" class="mr-2" height="40">
+            </a>
+            <a class="navbar-brand" href="index.html" style="margin-bottom: 3px; margin-top: 4px;"><span style="color: #c6fc1b; font-size: 20px">Anasayfa</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="c++-dersleri-1.html">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python-dersleri-1.html">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bash-dersleri-1.html">Bash</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="tepe" style="width: 100%; height: 100px;">
+
+    </div>
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-9 col-lg-9 blog-main">
+                <div class="blog-post">
+                    <h3 class="blog-post-title">Bash Programlaya Giriş</h3>
+                    <p class="blog-post-meta">1 Nisan 2019 -
+                        <a href="#">Yavuz Emilli</a>
+                    </p>
+
+                    <hr>
+                    <h4>Bash Nedir?</h4>
+                    <div id="icerik">
+                        <p>Bash GNU işletim sistemi için bir kabuk ya da başka bir deyişle komut dili yorumlayıcısıdır. <tt>Bourne-Again SHell</tt>sözcüklerinde türetilmiş bir kısaltmadır. Bell Araştırma Laboratuarının Unix'inin yedinci sürümündeki, şu anki Unix kabuğu<tt>sh</tt>'ın atasının yazarı Stephen Bourne'a atfen bu isim verilmiştir.</p>
+
+                        <p>Bash, <b><tt>sh</tt></b>'ın hemen hemen tüm özelliklerini ve Korn kabuğu olan <b><tt>ksh</tt></b> ile C kabuğu olarak bilinen<b><tt>csh</tt></b>'ın kullanışlı özelliklerini bir araya getirir. IEEE POSIX belirtiminin IEEE POSIX Kabuk ve Araçları bölümüne (IEEE Standardı 1003.1) uygun bir ürün olması amaçlanmıştır. <b><tt>sh</tt></b>'ın hem etkileşimli hem de programlama için kullanımını işlevsel olarak arttıran geliştirmeler içerir.</p>
+
+                        <p>GNU işletim sistemi, <b><tt>csh</tt></b>'ın bir sürümü de dahil olmak üzere başka kabuklarla da teçhiz edilmişse de Bash öntanımlı kabuktur. Diğer GNU yazılımları gibi Bash'de bir çok işletim sistemine uyarlanabilir - MS-DOS, OS/2 ve Windows platformları için bağımsız olarak desteklenen sürümleri vardır.</p>
+
+                        <h4>Kabuk Nedir?</h4>
+                        <p>Temelinde, bir kabuk, komutları çalıştırmaya yarayan basit bir makro işlemcisidir. Burada makro işlemcisi terimi, metinlerin ve sembollerin daha geniş ifadeler oluşturmak üzere genişletilmesi işlevini yerine getiren anlamındadır.</p>
+
+                        <p>Bir Unix kabuğu, hem bir komut yorumlayıcısı hem de bir programlama dilidir. Bir komut yorumlayıcı olarak, GNU araçlarından zengin bir demeti barındıran bir arayüzdür. Programlama dili özellikleri ise bu araçları birarada kullanabilmeyi mümkün kılar. Komutları içeren dosyalar oluşturulabilir ve bu dosyaların kendileri birer komut haline gelebilir. Bu yeni komutlar <tt>/bin</tt> dizinindeki sistem komutları gibi kullanıcılara ve gruplara ortak kullandıkları işlemleri otomatikleştiren özelleştirilebilir ortamlar sağlayabilir.</p>
+
+                        <p>Kabuklar etkileşimli ya da etkileşimsiz kullanılabilirler. Etkileşimli kipte, girdi klavyeden kabul edilirken, etkileşimsiz kipte bir dosyadan okunur.</p>
+
+                        <p>Bir kabuk, GNU komutlarını hem eşzamanlı hem de eşzamansız çalıştırabilir. Kabuk, başka bir girdi kabul etmeden önce eşzamanlı komutların işlemlerini bitirmesini bekleyebileceği gibi, eşzamansız komutlara paralel olarak kabuğun ek komutları okumasını ve çalıştırmasını sağlayabilir. Yönlendirme yapıları ile bu komutların giriş ve çıkışlarının kolayca denetlenmesini mümkün kılar. Üstelik, komutların çalıştırıldığı ortam üzerinde de denetimi sağlar.</p>
+
+                        <p>Kabuklar ayrıca ayrı araçlar üzerinden sağlanması sakıncalı olan ya da imkansız olan işlevselliği sağlamak üzere yerleşik komutların (yerleşikler - builtins) küçük bir demetini barındırır. Örneğin, <b><tt>cd</tt></b>, <b><tt>break</tt></b>, <b><tt>continue</tt></b> ve <b><tt>exec</tt></b>) komutları doğrudan kabuğun kendisini etkilediğinden kabuk dışında gerçeklenemezler.<b><tt> history</tt></b>,<b><tt> getopts</tt></b>,<b><tt> kill </tt></b>veya<b><tt> pwd </tt></b>yerleşikleri ise, diğerlerine karşın ayrı araçlar olarak gerçeklenebilirdi ama yerleşik komutlar olarak kullanılması daha faydalıdır. Tüm kabuk yerleşikleri kılavuzun ileri bölümlerinde anlatılmıştır.</p>
+
+                        <p>Komutlar icra edilirken kabuğun esas gücü (ve karmaşıklığı) kabuğun gömülü programlama dilinden gelir. Diğer yüksek seviyeli programlama dilleri gibi kabuk da değişkenler, akış denetim yapıları, işlevler içerir ve ayrımlama yapabilir.</p>
+
+                        <p>Kabuğun özellikleri programlama dilini güçlendirmekten ziyade özellikle etkileşimli kullanımı kuvvetlendirmeyi öne çıkarır. Bu etkileşim özellikleri iş denetimi, komut satırı düzenlemesi, komut geçmişi ve takma adlardır. Bu özelliklerin herbiri kılavuzun ileri bölümlerinde açıklanmıştır.</p>
+
+                    </div>
+
+                </div>
+                <!-- /.blog-post-1 -->
+
+                <div class="btn-toolbar justify-content-between">
+                    <div class="btn-group">
+                        <a class="btn btn-outline-secondary disabled" href="#">Geri</a>
+                        <a class="btn btn-outline-secondary disabled" href="#">İleri</a>
+
+                    </div>
+                    <a class="btn btn-outline-primary" href="#tepe" style="margin-left: auto">Başa Dön</a>
+                </div>
+                <br>
+            </div>
+            <!-- /.blog-main -->
+
+
+            <aside class="col-sm-4 col-md-3 col-lg-3">
+                <div class="kenar" style="text-align:center; position: sticky;">
+                    <div id="gizle1" class="sidebar-module sidebar-module-inset">
+                        <h4>Hakkımda</h4>
+                        <p>Adım Yavuz. Bilgisayar Mühendisliği öğrencisiyim ve 3 senedir yazılım geliştiriciliği ile ilgileniyorum.</p>
+                    </div>
+                    <div class="sidebar-module ">
+                        <h4>Yazılar</h4>
+                        <ol class="list-unstyled">
+                            <li>
+                                <a href="bash-dersleri-1.html">
+                                    Bash Programlamaya Giriş</a>
+                            </li>
+
+
+                        </ol>
+                    </div>
+                </div>
+            </aside>
+            <!-- /.blog-sidebar -->
+        </div>
+        <!-- /.row -->
+    </main>
+    <!-- /.container -->
+
+    <footer class="main-footer py-4">
+        <p class="text-muted text-center small p-0 mb-4">&copy; Copyright 2019 — Bilgisayar Programlama</p>
+        <div class="social d-table mx-auto">
+            <a class="facebook mx-3 h4 d-inline-block text-secondary" href="https://www.facebook.com/yavuzemilli" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.instagram.com/yavuzemilli/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            <a class="github mx-3 h4 d-inline-block text-secondary" href="https://github.com/manuelportakal" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+</body></html>

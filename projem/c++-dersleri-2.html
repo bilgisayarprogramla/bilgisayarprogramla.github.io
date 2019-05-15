@@ -1,0 +1,259 @@
+    <!DOCTYPE html>
+    <html lang="tr">
+
+    <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+    <!--script src="https://wtools.io/code/embed-js/dYq"></script>!-->
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 fixed-top">
+            <a href="index.html">
+                <img src="img/programmer.svg" class="mr-2" height="40">
+            </a>
+            <a class="navbar-brand" href="index.html" style="margin-bottom: 3px; margin-top: 4px;"><span style="color: #c6fc1b; font-size: 20px">Anasayfa</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mr-auto" id="navbarNavDropdown">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="c++-dersleri-1.html">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="python-dersleri-1.html">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bash-dersleri-1.html">Bash</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="tepe" style="width: 100%; height: 100px;">
+
+    </div>
+
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-9 col-lg-9 blog-main">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">C++ Temel Kavramlar - I</h2>
+                    <p class="blog-post-meta">2 Nisan 2019 -
+                        <a href="#">Yavuz Emilli</a>
+                    </p>
+
+                    <hr>
+                    <h4>C++ Program Yapısı</h4>
+                    <p id="icerik">Her progralama dilinde olduğu gibi Hello World yazısı ile dilin yapısını inceleyelim.</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/ebE" style="border:none;width:100%"></iframe>
+                    <br><br>
+                    <p id="icerik"><strong>#include</strong> ile C++ için gerekli olan kütüphane bilgileri tanımlanır. <strong>iostream</strong> kütüphanesi temel işlemler için gerekli bir kütüphanedir.<br> <br><strong>using namespace std;</strong> (std değiştirilebilir) Nesne yönelimli programlama için Namespace tanımlaması yapmak için kullanılır. İsteğe bağlıdır. Yukarıda tanımlanmazsa kullanılan method ile tanımlanır.
+                        <br><br><strong>main ()</strong>, program çalıştırmanın başladığı yerdir. Ayrıca tek satırlık yorumlar<strong> //</strong> ile başlar ve satırın sonunda durur.<br><br><strong> Sonraki satır cout &lt;&lt; “Hello World”;</strong> Ekranda <strong>Hello World</strong> yazısını göstermek için kullanılır.<br><br>Son olarak da <strong>return 0;</strong> programı sonlandırmak için dönüş değeri 0 girilip sonlandırılır.</p>
+
+
+                    <p>Programın çıktısı şu şekilde olur;</p>
+                    <img src="img/cikti-1.PNG" width="100%">
+
+                    <br><br>
+                    <h4>Noktalı Virgüller ve Bloklar</h4>
+                    <p>C++’da ifadeler noktalı virgülle sonlandırılır. Yazılan her bir ifadenin sonuna noktalı virgül koymak gerekir.</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/ech" style="border:none;width:100%" height="105px"></iframe>
+                    <p>Bloklar, süslü parantezler ile gösterilir ve mantıksal olarak kümelenmiş ifadeleri göstermek için kullanılır.</p>
+                    <iframe src="https://wtools.io/code/embed-iframe/ecn" style="border:none;width:100%; height: 130px"></iframe>
+
+                    <h4>C++ Tanımlayıcılar</h4>
+                    <p>Bir C ++ tanımlayıcısı, bir değişken, işlev, sınıf, modül veya herhangi bir kullanıcı tanımlı öğeyi tanımlamak için kullanılan bir addır. Bir tanımlayıcı, A’dan Z’ye veya a’dan z’ye veya alt çizgi (_), ardından sayı, harf ve _ sembolleri olacak şekilde tanımlanır.
+                        <br><br>C ++, tanımlayıcılarda @, % gibi noktalama karakterlerine izin vermez. C ++, büyük küçük harf duyarlı bir programlama dilidir. sayi1 ile Sayi1, SAYI1 tanımlamaları aynı değildir.</p>
+
+                    <iframe src="https://wtools.io/code/embed-iframe/ecv" style="border:none;width:100%"></iframe>
+
+                    <h4>C++ Anahtar Kelimeler</h4>
+                    <p>Aşağıdaki anahtar kelimeler C++ tarafından rezerve edilmiştir. C++’da tanımlayıcı yazarken bu anahtar kelimeler kullanılamaz.</p>
+
+                    <table class="table table-bordered" style="height: 558px;" width="855">
+                        <tbody>
+                            <tr>
+                                <td>asm</td>
+                                <td>else</td>
+                                <td>new</td>
+                                <td>this</td>
+                            </tr>
+                            <tr>
+                                <td>auto</td>
+                                <td>enum</td>
+                                <td>operator</td>
+                                <td>throw</td>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td>explicit</td>
+                                <td>private</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>break</td>
+                                <td>export</td>
+                                <td>protected</td>
+                                <td>try</td>
+                            </tr>
+                            <tr>
+                                <td>case</td>
+                                <td>extern</td>
+                                <td>public</td>
+                                <td>typedef</td>
+                            </tr>
+                            <tr>
+                                <td>catch</td>
+                                <td>false</td>
+                                <td>register</td>
+                                <td>typeid</td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>float</td>
+                                <td>reinterpret_cast</td>
+                                <td>typename</td>
+                            </tr>
+                            <tr>
+                                <td>class</td>
+                                <td>for</td>
+                                <td>return</td>
+                                <td>union</td>
+                            </tr>
+                            <tr>
+                                <td>const</td>
+                                <td>friend</td>
+                                <td>short</td>
+                                <td>unsigned</td>
+                            </tr>
+                            <tr>
+                                <td>const_cast</td>
+                                <td>goto</td>
+                                <td>signed</td>
+                                <td>using</td>
+                            </tr>
+                            <tr>
+                                <td>continue</td>
+                                <td>if</td>
+                                <td>sizeof</td>
+                                <td>virtual</td>
+                            </tr>
+                            <tr>
+                                <td>default</td>
+                                <td>inline</td>
+                                <td>static</td>
+                                <td>void</td>
+                            </tr>
+                            <tr>
+                                <td>delete</td>
+                                <td>int</td>
+                                <td>static_cast</td>
+                                <td>volatile</td>
+                            </tr>
+                            <tr>
+                                <td>do</td>
+                                <td>long</td>
+                                <td>struct</td>
+                                <td>wchar_t</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>mutable</td>
+                                <td>switch</td>
+                                <td>while</td>
+                            </tr>
+                            <tr>
+                                <td>dynamic_cast</td>
+                                <td>namespace</td>
+                                <td>template</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <!-- /.blog-post-2 -->
+
+
+
+
+
+                <div class="btn-toolbar justify-content-between">
+                    <div class="btn-group">
+                        <a class="btn btn-outline-primary enabled" href="c++-dersleri-1.html">Geri</a>
+                        <a class="btn btn-outline-primary" href="c++-dersleri-3.html">İleri</a>
+                    </div>
+                    <a class="btn btn-outline-primary" href="#tepe" style="margin-left: auto">Başa Dön</a>
+                </div>
+                <br>
+            </div>
+            <!-- /.blog-main -->
+
+
+
+
+            <aside class="col-sm-4 col-md-3 col-lg-3">
+                <div class="kenar" style="text-align:center; position: sticky;">
+                    <div id="gizle1" class="sidebar-module sidebar-module-inset">
+                        <h4>Hakkımda</h4>
+                        <p>Adım Yavuz. Bilgisayar Mühendisliği öğrencisiyim ve 3 senedir yazılım geliştiriciliği ile ilgileniyorum.</p>
+                    </div>
+                    <div class="sidebar-module ">
+                        <h4>Yazılar</h4>
+                        <ol class="list-unstyled">
+                            <li>
+                                <a href="c++-dersleri-1.html">C++ Programlamaya Giriş</a>
+                            </li>
+                            <li>
+                                <a href="c++-dersleri-2.html">C++ Temel Kavramlar - I</a>
+                            </li>
+                            <li>
+                                <a href="c++-dersleri-3.html">C++ Temel Kavramlar - II</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </aside>
+            <!-- /.blog-sidebar -->
+        </div>
+        <!-- /.row -->
+    </main>
+    <!-- /.container -->
+
+    <footer class="main-footer py-4">
+        <p class="text-muted text-center small p-0 mb-4">&copy; Copyright 2019 — Bilgisayar Programlama</p>
+        <div class="social d-table mx-auto">
+            <a class="facebook mx-3 h4 d-inline-block text-secondary" href="https://www.facebook.com/yavuzemilli" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.instagram.com/yavuzemilli/" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+
+            <a class="github mx-3 h4 d-inline-block text-secondary" href="https://github.com/manuelportakal" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </footer>
+
+</body></html>
